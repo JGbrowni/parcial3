@@ -6,6 +6,7 @@ import ProductPage from "../pages/ProductPage";
 import ProductDetalle from "../components/productDetalle";
 import ProductDetalle2 from "../components/productDetalle2";
 import CarritoPage from "../pages/CarritoPage";
+import PreguntasYRespuestas from "../pages/PreguntasYRespuestas";
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,10 @@ const AppRouter = () => {
           <Route path="productDetail" element={<ProductDetalle />} />
           <Route path="productDetail2" element={<ProductDetalle2 />} />
           <Route path="carrito" element={<CarritoPage />} />
+          <Route
+            path="PreguntasRespuestas"
+            element={<PreguntasYRespuestas />}
+          ></Route>
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

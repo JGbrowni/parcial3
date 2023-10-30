@@ -28,7 +28,7 @@ const Navigation = () => {
               <Link to="">Contactos</Link>
             </div>
             <div className="seccionesbar col-sm-2 p-2">
-              <Link to="">FAQ</Link>
+              <Link to="/PreguntasRespuestas">FAQ</Link>
             </div>
             <div className="seccionesbar col-sm-2 p-2">
               <Link to="/carrito">
