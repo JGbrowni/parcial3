@@ -77,12 +77,11 @@ const ProductDetalle = () => {
                 </li>
               </ul>
               <p>
-                <span className="fw-bold">Nota: </span>Los productos con
-                enchufes eléctricos están diseñados para usarse en EE. UU. Las
-                tomas de corriente y la tensión difieren a nivel internacional.
-                Es posible que este producto requiera un adaptador o conversor
-                para poder usarse en su destino. Comprueba la compatibilidad
-                antes de comprar.
+                <span className="fw-bold">Nota: </span>Para los compradores de
+                EE. UU.: Este teléfono inteligente no es compatible/no
+                funcionará con ninguna red CDMA, incluyendo: VERIZON, SPRINT, US
+                CELLULAR. Consulta con tu proveedor de red para verificar la
+                compatibilidad de 3G o 4G/LTE antes de comprar.
               </p>
 
               <div className="cantidad mt-4">

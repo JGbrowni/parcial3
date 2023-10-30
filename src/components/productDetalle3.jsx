@@ -1,8 +1,8 @@
 import React from "react";
-import Celular1 from "../assets/img/celularventa2.png";
-import Celular2 from "../assets/img/celularventa2_2.png";
+import Celular1 from "../assets/img/celularventa3_1.png";
+import Celular2 from "../assets/img/celularventa3_2.png";
 
-const ProductDetalle2 = () => {
+const ProductDetalle3 = () => {
   return (
     <>
       <div className="d-flex flex-row my-5 py-4">
@@ -34,11 +34,11 @@ const ProductDetalle2 = () => {
             </div>
 
             <div className="col-md-5 col-sm-4 col-12">
-              <h2>Samsung Galaxy A14 4G LTE</h2>
-              <h3 className="fw-bold">US$132.31</h3>
+              <h2>Motorola Moto e40 4G/LTE</h2>
+              <h3 className="fw-bold">US$133.99</h3>
               <p>
-                <span className="fw-bold">Almacenamiento:</span>
-                132 GB
+                <span className="fw-bold">Almacenamiento: </span>
+                68 GB
               </p>
               <p>
                 <span className="fw-bold">SIM: </span>
@@ -46,20 +46,16 @@ const ProductDetalle2 = () => {
               </p>
               <p>
                 <span className="fw-bold">Tamaño de pantalla: </span>
-                6.6 pulgadas
+                6.5 pulgadas
               </p>
               <p>
                 <span className="fw-bold">Sistema operativo: </span>
-                Android 12, un núcleo de interfaz de usuario 4.1
+                Android
               </p>
               <ul>
                 <span className="fw-bold">Sobre este artículo:</span>
                 <li>
-                  <p>
-                    ROM de 128 GB, 4 GB de RAM, MicroSD expandible, Mediatek
-                    MT6769 Helio G80 (12 nm), Octa-core, Mali-G52 MC2, huella
-                    digital (montada lateralmente)
-                  </p>
+                  <p>Android 11, Unisoc T700, Octa-core 1.8 GHz</p>
                 </li>
                 <li>
                   <p>
@@ -78,11 +74,12 @@ const ProductDetalle2 = () => {
                 </li>
               </ul>
               <p>
-                <span className="fw-bold">Nota: </span>Para los compradores de
-                EE. UU.: Este teléfono inteligente no es compatible/no
-                funcionará con ninguna red CDMA, incluyendo: VERIZON, SPRINT, US
-                CELLULAR. Consulta con tu proveedor de red para verificar la
-                compatibilidad de 3G o 4G/LTE antes de comprar.
+                <span className="fw-bold">Nota: </span>
+                Para los compradores de EE. UU.: Este teléfono inteligente no es
+                compatible/no funcionará con ninguna red CDMA, incluyendo:
+                VERIZON, SPRINT, US CELLULAR. Consulta con tu proveedor de red
+                para verificar la compatibilidad de 3G o 4G/LTE antes de
+                comprar.
               </p>
 
               <div className="cantidad mt-4">
@@ -113,4 +110,4 @@ const ProductDetalle2 = () => {
   );
 };
 
-export default ProductDetalle2;
+export default ProductDetalle3;
