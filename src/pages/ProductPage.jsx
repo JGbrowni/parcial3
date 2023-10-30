@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Celularicono from "../assets/img/celularpeque.png";
 
 const ProductPage = () => {
   return (
@@ -15,17 +16,14 @@ const ProductPage = () => {
           <div className="col-md-8 col-sm-12 col-12">
             <div className="row">
               <div className="col-md-3 col-sm-4 col-5">
-                <img src="" alt="" href="celular1.html" />
+                <img src={Celularicono} alt="" href="" />
               </div>
               <div className="col-md-9 col-sm-8 col-6">
                 <Link to="/productDetail">
-                  <h4>
-                    Sony ZV-1F Cámara de Vlog para Creadores de Contenido y
-                    Vloggers Negro
-                  </h4>
+                  <h4>Samsung Galaxy A53 5G</h4>
                 </Link>
-
-                <h5 className="fw-bold">US$498.00</h5>
+                <p>El Galaxy Fold mas liviano y compacto</p>
+                <h5 className="fw-bold">US$284.31</h5>
               </div>
             </div>
           </div>

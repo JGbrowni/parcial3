@@ -1,5 +1,5 @@
 import React from "react";
-import Celular from "../assets/img/celularventa1.jpeg";
+import Celular from "../assets/img/celularventa1.png";
 
 const ProductDetalle = () => {
   return (
@@ -33,57 +33,36 @@ const ProductDetalle = () => {
             </div>
 
             <div className="col-md-5 col-sm-4 col-12">
-              <h2>
-                Sony ZV-1F Cámara de Vlog para Creadores de Contenido y Vloggers
-                Negro
-              </h2>
-              <h3 className="fw-bold">US$498.00</h3>
+              <h2>Samsung Galaxy A53 5G</h2>
+              <h3 className="fw-bold">US$284.31</h3>
               <p>
-                <span className="fw-bold">Nombre del modelo: </span>ZV-1F
+                <span className="fw-bold">Almacenamiento:</span>
+                128 GB
               </p>
               <p>
-                <span className="fw-bold">
-                  Resolución del sensor fotográfico:
-                </span>
-                20,1 MP
+                <span className="fw-bold">SIM: </span>
+                doble SIM
               </p>
               <p>
-                <span className="fw-bold">Tamaño del sensor de foto: </span>
-                1-inch
+                <span className="fw-bold">Pantalla: </span>
+                FHD Super AMOLED de 6.5 pulgadas
               </p>
               <p>
-                <span className="fw-bold">Estabilización de imagen: </span>
-                Digital
-              </p>
-              <p>
-                <span className="fw-bold">Velocidad Mínima de Obturación:</span>
-                1/16000 Segundos
-              </p>
-              <p>
-                <span className="fw-bold">Control de exposición: </span>
-                Manual
-              </p>
-              <p>
-                <span className="fw-bold">Resolución inmóvil efectiva: </span>
+                <span className="fw-bold">Camara inteligente</span>
               </p>
               <ul>
                 <span className="fw-bold">Sobre este artículo</span>
                 <li>
                   <p>
-                    La lente ultra ancha de 0.787 in* lo consigue todo en el
-                    marco, incluso a la longitud del brazo
+                    Privacidad y seguridad: Protege tus datos con Knox Security
+                    multicapa.
                   </p>
                 </li>
                 <li>
                   <p>
-                    Sensor grande de 1" y lente F2, para fondos con poca luz y
-                    desenfoque
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Pantalla táctil de articulación lateral LCD para fotos
-                    selfie fáciles de componer
+                    Diseño moderno: La vida sucede, pero el Galaxy A53 5G
+                    proporciona un diseño delgado de primera calidad que está
+                    diseñado para durar esos momentos impredecibles.
                   </p>
                 </li>
               </ul>

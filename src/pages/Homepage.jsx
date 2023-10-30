@@ -18,7 +18,7 @@ const Homepage = () => {
         </video>
         <div className="content">
           <img src={Celular2} alt="" className="celulares" />
-          <h1>Contenido Superpuesto</h1>
+          <h1>Mismo modelo, multiples colores para elegir</h1>
           <p>Este es el contenido que aparecerá encima del video.</p>
         </div>
       </div>
