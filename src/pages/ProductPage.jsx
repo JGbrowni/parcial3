@@ -30,7 +30,7 @@ const ProductPage = () => {
                 <img src={Celularicono1} alt="" href="" />
               </div>
               <div className="col-md-9 col-sm-8 col-6">
-                <Link to="/productDetail">
+                <Link to="/productDetail2">
                   <h4>Samsung Galaxy A14 5G</h4>
                 </Link>
                 <p>

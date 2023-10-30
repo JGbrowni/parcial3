@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import videoFile from "../assets/img/MovingGradientBackground.mp4";
 import Celular from "../assets/img/celularventa1.png";
 import Celular1 from "../assets/img/celularventa2.png";
@@ -28,26 +29,30 @@ const Homepage = () => {
           <div className="celuproductos">
             <img src={Celular} alt="" />
             <p>Samnsung Galaxy A53</p>
-            <button
-                  type="Submit"
-                  className="btn btn-dark btn-lg btn-rounded btn-add-cart"
-                  id="Comprar"
-                  value="Comprar"
-                >
-                  Mas informacion
-                </button>
+            <Link to="/productDetail">
+              <button
+                type="Submit"
+                className="btn btn-dark btn-lg btn-rounded btn-add-cart"
+                id="Comprar"
+                value="Comprar"
+              >
+                Mas informacion
+              </button>
+            </Link>
           </div>
           <div className="celuproductos">
             <img src={Celular1} alt="" />
             <p>Samsung Galaxy A14</p>
-            <button
-                  type="Submit"
-                  className="btn btn-dark btn-lg btn-rounded btn-add-cart"
-                  id="Comprar"
-                  value="Comprar"
-                >
-                  Mas informacion
-                </button>
+            <Link to="/productDetail2">
+              <button
+                type="Submit"
+                className="btn btn-dark btn-lg btn-rounded btn-add-cart"
+                id="Comprar"
+                value="Comprar"
+              >
+                Mas informacion
+              </button>
+            </Link>
           </div>
         </div>
       </section>

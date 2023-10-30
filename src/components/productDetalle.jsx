@@ -49,7 +49,8 @@ const ProductDetalle = () => {
                 FHD Super AMOLED de 6.5 pulgadas
               </p>
               <p>
-                <span className="fw-bold">Camara inteligente</span>
+                <span className="fw-bold">Sistema operativo: </span>
+                Android
               </p>
               <ul>
                 <span className="fw-bold">Sobre este artículo</span>
@@ -64,6 +65,14 @@ const ProductDetalle = () => {
                     Diseño moderno: La vida sucede, pero el Galaxy A53 5G
                     proporciona un diseño delgado de primera calidad que está
                     diseñado para durar esos momentos impredecibles.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Batería de larga duración: Tu ajetreada vida merece una
+                    batería construida para ocupada; ya sea que estés haciendo
+                    una videollamada en tu viaje, poniéndote al día con tu
+                    programa favorito o con amigos y familiares.
                   </p>
                 </li>
               </ul>
