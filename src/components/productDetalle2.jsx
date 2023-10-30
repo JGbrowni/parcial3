@@ -1,6 +1,6 @@
 import React from "react";
-import Celular from "../assets/img/celularventa1.png";
-import Celular2 from "../assets/img/celularventa1_2.png";
+import Celular1 from "../assets/img/celularventa2.png";
+import Celular2 from "../assets/img/celularventa2_2.png";
 
 const ProductDetalle = () => {
   return (
@@ -17,7 +17,7 @@ const ProductDetalle = () => {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <img
-                      src={Celular}
+                      src={Celular1}
                       className="d-block w-100"
                       alt="Imagen 1"
                     />
