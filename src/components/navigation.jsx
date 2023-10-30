@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import Logo from "../assets/img/580b57fcd9996e24bc43c516.png";
+import Logo from "../assets/img/Logodelfin.png";
 
 const Navigation = () => {
   return (
@@ -31,9 +31,9 @@ const Navigation = () => {
               <Link to="">FAQ</Link>
             </div>
             <div className="seccionesbar col-sm-2 p-2">
-              <a href="html/carrito.html">
+              <Link to="/carrito">
                 <i className="fa-solid fa-cart-shopping fa-lg"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -45,3 +45,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
