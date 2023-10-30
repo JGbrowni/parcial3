@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import Logo from "../assets/img/580b57fcd9996e24bc43c516.png";
+import Logo from "../assets/img/Logodelfin.png";
 
 const Navigation = () => {
   return (
