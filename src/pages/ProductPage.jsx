@@ -32,6 +32,7 @@ const ProductPage = () => {
               key={index}
               imgProduct={product.image}
               nameProduct={product.product}
+              priceProduct={product.price}
             />
           ))}
         </div>
