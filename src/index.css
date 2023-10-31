@@ -103,7 +103,7 @@ footer a:hover {
 .linea {
   background-color: white;
   height: 2px;
-  width: 2px;
+  width: 100%;
 }
 
 /*   landing page - index html  */
@@ -229,6 +229,7 @@ video {
 
 .carritofondo {
   width: 100%;
+  height: auto;
 }
 
 .container-cart-producto {
