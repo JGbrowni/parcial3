@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetalle = () => {
   const [product, setProduct] = useState({});
+  const [cart, setCart] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
@@ -27,6 +30,38 @@ const ProductDetalle = () => {
 
     fetchData();
   }, [id]);
+
+  const addToCart = () => {
+    const existingProductIndex = cart.findIndex(
+      (item) => item.id === product.id
+    );
+
+    if (existingProductIndex !== -1) {
+      const updatedCart = [...cart];
+      updatedCart[existingProductIndex] = {
+        ...updatedCart[existingProductIndex],
+        quantity: updatedCart[existingProductIndex].quantity + 1,
+      };
+      setCart(updatedCart);
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
+    } else {
+      const updatedCart = [...cart, { ...product, quantity: 1 }];
+      setCart(updatedCart);
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
+    }
+
+    toast.success("Se ha añadido al carrito correctamente!", {
+      position: "top-right",
+    });
+  };
+
+  useEffect(() => {
+    const storedCart = localStorage.getItem("cart");
+
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    }
+  }, []);
 
   return (
     <>
@@ -112,10 +147,11 @@ const ProductDetalle = () => {
 
               <div className="boton mt-4">
                 <button
-                  type="Submit"
+                  type="submit"
                   className="btn btn-dark btn-lg btn-rounded btn-add-cart text-gray-700"
                   id="Comprar"
                   value="Comprar"
+                  onClick={addToCart}
                 >
                   Agregar a carrito
                 </button>
@@ -124,6 +160,7 @@ const ProductDetalle = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };

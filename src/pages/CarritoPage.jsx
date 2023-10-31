@@ -1,35 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const CarritoPage = () => {
+  const storedCart = JSON.parse(localStorage.getItem("cart"));
+  const [cart, setCart] = useState(storedCart);
+  const ivaRate = 0.16;
+
+  const subtotal = cart.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  );
+  const iva = subtotal * ivaRate;
+  const total = subtotal + iva;
+
+  const removeProduct = (index) => {
+    const updatedCart = [...cart];
+    updatedCart.splice(index, 1);
+
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+
+    setCart(updatedCart);
+
+    toast.success("Producto eliminado del carrito.", {
+      position: "top-right",
+    });
+  };
+
   return (
     <>
       <div className="carritofondo p-5">
         <div className="container">
           <div className="container-cart-products">
             <div className="row-product">
-              <div className="cart-product">
-                <div className="info-cart-product">
-                  <span className="cantidadImp">1</span>
-                  <p className="productoImp">Marca de celular</p>
-                  <span className="precioImp">$230</span>
+              {cart.map((item, index) => (
+                <div key={index} className="cart-product">
+                  <div className="info-cart-product">
+                    <span className="cantidadImp">{item.quantity}</span>
+                    <p className="productoImp">{item.product}</p>
+                    <span className="precioImp">$ {item.price}</span>
+                  </div>
+                  <img
+                    src={item.image}
+                    alt={item.productName}
+                    className="w-[200px] h-[200px]"
+                  />
+                  <button
+                    className="text-red-500"
+                    onClick={() => removeProduct(index)}
+                  >
+                    <i className="fa-solid fa-trash mr-3"></i> Remove
+                  </button>
                 </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 384 512"
-                  className="icon-close"
-                >
-                  <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
-                </svg>
-              </div>
+              ))}
             </div>
 
-            <div className="cart-total">
+            <div className="cart-total mt-4">
+              <h3>Subtotal:</h3>
+              <span className="totalImp text-[20px]">$ {subtotal}</span>
+              <h3>IVA ({(ivaRate * 100).toFixed(0)}%):</h3>
+              <span className="totalImp text-[20px]">$ {iva}</span>
               <h3>Total:</h3>
-              <span className="totalImp">$230</span>
+              <span className="totalImp text-[20px]">$ {total}</span>
             </div>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };

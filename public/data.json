@@ -2,7 +2,7 @@
     {
         "id": "1",
         "product": "Samsung Galaxy A53 5G",
-        "price": "$284.31",
+        "price": "284.31",
         "storage": "128 GB",
         "sim": "dual SIM",
         "display": "FHD Super AMOLED 6.5-inch screen",
@@ -18,7 +18,7 @@
     {
         "id": "2",
         "product": "iPhone 13 Pro",
-        "price": "$999.00",
+        "price": "999.00",
         "storage": "256 GB",
         "sim": "single SIM",
         "display": "Super Retina XDR 6.1-inch screen",
@@ -34,7 +34,7 @@
     {
         "id": "3",
         "product": "Google Pixel 6",
-        "price": "$699.00",
+        "price": "699.00",
         "storage": "128 GB",
         "sim": "dual SIM",
         "display": "OLED 6.4-inch screen",
@@ -50,7 +50,7 @@
     {
         "id": "4",
         "product": "OnePlus 9 Pro",
-        "price": "$799.00",
+        "price": "799.00",
         "storage": "256 GB",
         "sim": "dual SIM",
         "display": "Fluid AMOLED 6.7-inch screen",
@@ -66,7 +66,7 @@
     {
         "id": "5",
         "product": "iPhone SE (2nd generation)",
-        "price": "$399.00",
+        "price": "399.00",
         "storage": "64 GB",
         "sim": "single SIM",
         "display": "Retina HD 4.7-inch screen",

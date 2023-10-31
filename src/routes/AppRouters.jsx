@@ -5,6 +5,7 @@ import HomePage from "../pages/Homepage";
 import ProductPage from "../pages/ProductPage";
 import ProductDetalle from "../components/productDetalle";
 import CarritoPage from "../pages/CarritoPage";
+import Footer from "../components/Footer";
 
 const AppRouter = () => {
   return (
@@ -18,7 +19,9 @@ const AppRouter = () => {
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </>
   );
 };
+
 export default AppRouter;
