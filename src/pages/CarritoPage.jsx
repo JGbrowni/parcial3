@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 const CarritoPage = () => {
   const storedCart = JSON.parse(localStorage.getItem("cart"));
   const [cart, setCart] = useState(storedCart);
-  const ivaRate = 0.16;
+  const ivaRate = 0.13;
 
   const subtotal = cart.reduce(
     (acc, item) => acc + item.price * item.quantity,
