@@ -1,8 +1,8 @@
 import React from "react";
-import Celular from "../assets/img/celularventa1.png";
-import Celular2 from "../assets/img/celularventa1_2.png";
+import Celular1 from "../assets/img/celularventa3_1.png";
+import Celular2 from "../assets/img/celularventa3_2.png";
 
-const ProductDetalle = () => {
+const ProductDetalle3 = () => {
   return (
     <>
       <div className="d-flex flex-row my-5 py-4">
@@ -17,7 +17,7 @@ const ProductDetalle = () => {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <img
-                      src={Celular}
+                      src={Celular1}
                       className="d-block w-100"
                       alt="Imagen 1"
                     />
@@ -34,54 +34,52 @@ const ProductDetalle = () => {
             </div>
 
             <div className="col-md-5 col-sm-4 col-12">
-              <h2>Samsung Galaxy A53 5G</h2>
-              <h3 className="fw-bold">US$284.31</h3>
+              <h2>Motorola Moto e40 4G/LTE</h2>
+              <h3 className="fw-bold">US$133.99</h3>
               <p>
-                <span className="fw-bold">Almacenamiento:</span>
-                128 GB
+                <span className="fw-bold">Almacenamiento: </span>
+                68 GB
               </p>
               <p>
                 <span className="fw-bold">SIM: </span>
                 doble SIM
               </p>
               <p>
-                <span className="fw-bold">Pantalla: </span>
-                FHD Super AMOLED de 6.5 pulgadas
+                <span className="fw-bold">Tamaño de pantalla: </span>
+                6.5 pulgadas
               </p>
               <p>
                 <span className="fw-bold">Sistema operativo: </span>
                 Android
               </p>
               <ul>
-                <span className="fw-bold">Sobre este artículo</span>
+                <span className="fw-bold">Sobre este artículo:</span>
+                <li>
+                  <p>Android 11, Unisoc T700, Octa-core 1.8 GHz</p>
+                </li>
                 <li>
                   <p>
-                    Privacidad y seguridad: Protege tus datos con Knox Security
-                    multicapa.
+                    Cámara trasera: 50MP, f/1.8, (ancha) + 5MP, f/2.2,
+                    (ultrawide) + 2MP, f/2.4, (macro), cámara frontal: 13MP,
+                    f/2.0, batería de 5000 mAh
                   </p>
                 </li>
                 <li>
                   <p>
-                    Diseño moderno: La vida sucede, pero el Galaxy A53 5G
-                    proporciona un diseño delgado de primera calidad que está
-                    diseñado para durar esos momentos impredecibles.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Batería de larga duración: Tu ajetreada vida merece una
-                    batería construida para ocupada; ya sea que estés haciendo
-                    una videollamada en tu viaje, poniéndote al día con tu
-                    programa favorito o con amigos y familiares.
+                    Modelo internacional - Sin garantía en los Estados Unidos.
+                    Compatible con la mayoría de los operadores GSM como
+                    T-Mobile, MetroPCS, etc. No funcionará con operadores CDMA
+                    como Verizon, Sprint, Boost
                   </p>
                 </li>
               </ul>
               <p>
-                <span className="fw-bold">Nota: </span>Para los compradores de
-                EE. UU.: Este teléfono inteligente no es compatible/no
-                funcionará con ninguna red CDMA, incluyendo: VERIZON, SPRINT, US
-                CELLULAR. Consulta con tu proveedor de red para verificar la
-                compatibilidad de 3G o 4G/LTE antes de comprar.
+                <span className="fw-bold">Nota: </span>
+                Para los compradores de EE. UU.: Este teléfono inteligente no es
+                compatible/no funcionará con ninguna red CDMA, incluyendo:
+                VERIZON, SPRINT, US CELLULAR. Consulta con tu proveedor de red
+                para verificar la compatibilidad de 3G o 4G/LTE antes de
+                comprar.
               </p>
 
               <div className="cantidad mt-4">
@@ -112,4 +110,4 @@ const ProductDetalle = () => {
   );
 };
 
-export default ProductDetalle;
+export default ProductDetalle3;

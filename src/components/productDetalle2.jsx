@@ -1,8 +1,8 @@
 import React from "react";
-import Celular from "../assets/img/celularventa1.png";
-import Celular2 from "../assets/img/celularventa1_2.png";
+import Celular1 from "../assets/img/celularventa2.png";
+import Celular2 from "../assets/img/celularventa2_2.png";
 
-const ProductDetalle = () => {
+const ProductDetalle2 = () => {
   return (
     <>
       <div className="d-flex flex-row my-5 py-4">
@@ -17,7 +17,7 @@ const ProductDetalle = () => {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <img
-                      src={Celular}
+                      src={Celular1}
                       className="d-block w-100"
                       alt="Imagen 1"
                     />
@@ -34,45 +34,46 @@ const ProductDetalle = () => {
             </div>
 
             <div className="col-md-5 col-sm-4 col-12">
-              <h2>Samsung Galaxy A53 5G</h2>
-              <h3 className="fw-bold">US$284.31</h3>
+              <h2>Samsung Galaxy A14 4G LTE</h2>
+              <h3 className="fw-bold">US$132.31</h3>
               <p>
                 <span className="fw-bold">Almacenamiento:</span>
-                128 GB
+                132 GB
               </p>
               <p>
                 <span className="fw-bold">SIM: </span>
                 doble SIM
               </p>
               <p>
-                <span className="fw-bold">Pantalla: </span>
-                FHD Super AMOLED de 6.5 pulgadas
+                <span className="fw-bold">Tamaño de pantalla: </span>
+                6.6 pulgadas
               </p>
               <p>
                 <span className="fw-bold">Sistema operativo: </span>
-                Android
+                Android 12, un núcleo de interfaz de usuario 4.1
               </p>
               <ul>
-                <span className="fw-bold">Sobre este artículo</span>
+                <span className="fw-bold">Sobre este artículo:</span>
                 <li>
                   <p>
-                    Privacidad y seguridad: Protege tus datos con Knox Security
-                    multicapa.
+                    ROM de 128 GB, 4 GB de RAM, MicroSD expandible, Mediatek
+                    MT6769 Helio G80 (12 nm), Octa-core, Mali-G52 MC2, huella
+                    digital (montada lateralmente)
                   </p>
                 </li>
                 <li>
                   <p>
-                    Diseño moderno: La vida sucede, pero el Galaxy A53 5G
-                    proporciona un diseño delgado de primera calidad que está
-                    diseñado para durar esos momentos impredecibles.
+                    Cámara trasera: 50MP, f/1.8, (ancha) + 5MP, f/2.2,
+                    (ultrawide) + 2MP, f/2.4, (macro), cámara frontal: 13MP,
+                    f/2.0, batería de 5000 mAh
                   </p>
                 </li>
                 <li>
                   <p>
-                    Batería de larga duración: Tu ajetreada vida merece una
-                    batería construida para ocupada; ya sea que estés haciendo
-                    una videollamada en tu viaje, poniéndote al día con tu
-                    programa favorito o con amigos y familiares.
+                    Modelo internacional - Sin garantía en los Estados Unidos.
+                    Compatible con la mayoría de los operadores GSM como
+                    T-Mobile, MetroPCS, etc. No funcionará con operadores CDMA
+                    como Verizon, Sprint, Boost
                   </p>
                 </li>
               </ul>
@@ -112,4 +113,4 @@ const ProductDetalle = () => {
   );
 };
 
-export default ProductDetalle;
+export default ProductDetalle2;

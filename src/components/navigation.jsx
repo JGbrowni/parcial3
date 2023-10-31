@@ -22,15 +22,6 @@ const Navigation = () => {
               <Link to="/products">Productos</Link>
             </div>
             <div className="seccionesbar col-sm-2 p-2">
-              <Link to="">Tendencia</Link>
-            </div>
-            <div className="seccionesbar col-sm-2 p-2">
-              <Link to="">Contactos</Link>
-            </div>
-            <div className="seccionesbar col-sm-2 p-2">
-              <Link to="">FAQ</Link>
-            </div>
-            <div className="seccionesbar col-sm-2 p-2">
               <Link to="/carrito">
                 <i className="fa-solid fa-cart-shopping fa-lg"></i>
               </Link>
