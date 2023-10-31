@@ -5,17 +5,7 @@ const ProductDetalle = () => {
   const [product, setProduct] = useState({});
   const { id } = useParams();
 
-  const updateImageUrls = (data, baseUrl) => {
-    return data.map((product) => ({
-      ...product,
-      image: `${baseUrl}${product.image}`,
-      image2: `${baseUrl}${product.image2}`,
-    }));
-  };
-
   useEffect(() => {
-    const baseUrl = import.meta.env.VITE_API_BASE_URL;
-
     const fetchData = async () => {
       try {
         const response = await fetch("/data.json");
@@ -23,10 +13,7 @@ const ProductDetalle = () => {
           throw new Error("Failed to fetch data");
         }
         const jsonData = await response.json();
-
-        const updatedData = updateImageUrls(jsonData, baseUrl);
-
-        const selectedProduct = updatedData.find((item) => item.id === id);
+        const selectedProduct = jsonData.find((item) => item.id === id);
 
         if (selectedProduct) {
           setProduct(selectedProduct);

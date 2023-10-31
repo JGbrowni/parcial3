@@ -7,8 +7,6 @@ const Homepage = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const baseUrl = import.meta.env.VITE_API_BASE_URL;
-
     const fetchData = async () => {
       try {
         const response = await fetch("/data.json");
@@ -16,14 +14,7 @@ const Homepage = () => {
           throw new Error("Failed to fetch data");
         }
         const jsonData = await response.json();
-
-        const updatedData = jsonData.map((product) => ({
-          ...product,
-          image: `${baseUrl}${product.image}`,
-          image2: `${baseUrl}${product.image2}`,
-        }));
-
-        setData(updatedData);
+        setData(jsonData);
       } catch (error) {
         console.error(error);
       }
