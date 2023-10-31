@@ -12,8 +12,8 @@
         "battery": "Long-lasting battery for your busy life",
         "compatibility_note": "For buyers in the US: This smartphone is not compatible with CDMA networks, including VERIZON, SPRINT, US CELLULAR. Please check with your network provider for 3G or 4G/LTE compatibility before purchasing.",
         "stock": "In stock",
-        "image": "../src/assets/img/celularventa1.png",
-        "image2": "../src/assets/img/celularventa2.png"
+        "image": "/img/celularventa1.png",
+        "image2": "/img/celularventa2.png"
     },
     {
         "id": "2",
@@ -28,8 +28,8 @@
         "battery": "All-day battery life",
         "compatibility_note": "Compatible with major US carriers",
         "stock": "In stock",
-        "image": "../src/assets/img/celularventa2.png",
-        "image2": "../src/assets/img/celularventa2_2.png"
+        "image": "/img/celularventa2.png",
+        "image2": "/img/celularventa2_2.png"
     },
     {
         "id": "3",
@@ -44,8 +44,8 @@
         "battery": "All-day battery life with fast charging",
         "compatibility_note": "Compatible with major US carriers",
         "stock": "In stock",
-        "image": "../src/assets/img/celularventa3.png",
-        "image2": "../src/assets/img/celularventa3_2.png"
+        "image": "/img/celularventa3.png",
+        "image2": "/img/celularventa3_2.png"
     },
     {
         "id": "4",
@@ -60,8 +60,8 @@
         "battery": "Warp Charge for quick charging",
         "compatibility_note": "Compatible with major US carriers",
         "stock": "In stock",
-        "image": "../src/assets/img/celularventa4.png",
-        "image2": "../src/assets/img/celularventa4_2.png"
+        "image": "/img/celularventa4.png",
+        "image2": "/img/celularventa4_2.png"
     },
     {
         "id": "5",
@@ -76,7 +76,7 @@
         "battery": "Great battery life for everyday use",
         "compatibility_note": "Compatible with major US carriers",
         "stock": "In stock",
-        "image": "../src/assets/img/celularventa5.png",
-        "image2": "../src/assets/img/celularventa5_2.png"
+        "image": "/img/celularventa5.png",
+        "image2": "/img/celularventa5_2.png"
     }
 ]
