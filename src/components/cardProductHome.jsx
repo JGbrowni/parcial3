@@ -8,8 +8,9 @@ const CardProductHome = (product) => {
     <>
       <div className="celuproductos">
         <img src={product.imgProduct} alt="" />
-        <p>{product.nameProduct}</p>
-        <Link to={`/productDetail/${idProduct}`} >
+        <p className="mb-1 font-bold">{product.nameProduct}</p>
+        <p className="mb-2">Precio: {product.priceProduct}</p>
+        <Link to={`/productDetail/${idProduct}`}>
           <button
             type="Submit"
             className="btn btn-dark btn-lg btn-rounded btn-add-cart text-gray-600"
