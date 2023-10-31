@@ -12,7 +12,7 @@ const Navigation = () => {
       </div>
       <nav>
         <div className="nav-bar">
-          <div className="secciones d-flex flex-row justify-content-between">
+          <div className="secciones flex flex-row justify-center">
             <div className="seccionesbar col-sm-2 p-2">
               <Link to="/">
                 <i className="fa-solid fa-house fa-lg"></i>

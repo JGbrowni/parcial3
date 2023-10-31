@@ -1,11 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import videoFile from "../assets/img/MovingGradientBackground.mp4";
-import Celular from "../assets/img/celularventa1.png";
-import Celular1 from "../assets/img/celularventa2.png";
 import Celular2 from "../assets/img/celular2.png";
+import CardProductHome from "../components/cardProductHome";
 
 const Homepage = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/data.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="video-container">
@@ -24,36 +41,17 @@ const Homepage = () => {
           <p>Ya disponible nuevo Galaxy A53</p>
         </div>
       </div>
-      <section className="mostrarpfondo">
-        <div className="mostrarproductos">
-          <div className="celuproductos">
-            <img src={Celular} alt="" />
-            <p>Samnsung Galaxy A53</p>
-            <Link to="/productDetail">
-              <button
-                type="Submit"
-                className="btn btn-dark btn-lg btn-rounded btn-add-cart"
-                id="Comprar"
-                value="Comprar"
-              >
-                Mas informacion
-              </button>
-            </Link>
-          </div>
-          <div className="celuproductos">
-            <img src={Celular1} alt="" />
-            <p>Samsung Galaxy A14</p>
-            <Link to="/productDetail2">
-              <button
-                type="Submit"
-                className="btn btn-dark btn-lg btn-rounded btn-add-cart"
-                id="Comprar"
-                value="Comprar"
-              >
-                Mas informacion
-              </button>
-            </Link>
-          </div>
+      <section className="mostrarpfondo h-[80vh]">
+        <div className="grid grid-cols-4 gap-5 place-content-center w-11/12 mx-auto px-0">
+          {data.map((product, index) => (
+            <CardProductHome
+              id={product.id}
+              data={product}
+              key={index}
+              imgProduct={product.image}
+              nameProduct={product.product}
+            />
+          ))}
         </div>
       </section>
     </>
