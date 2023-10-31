@@ -1,15 +1,13 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import { ProductList } from "./components/Productlist";
+import CarritoPage from "./pages/CarritoPage";
 import AppRouter from "./routes/AppRouters";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <>
+      <CarritoPage />
       <AppRouter />
-      <Header />
-      <ProductList />
     </>
   );
 }
