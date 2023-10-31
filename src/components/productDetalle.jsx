@@ -32,7 +32,9 @@ const ProductDetalle = () => {
     <>
       <div className="d-flex flex-row my-5 py-4">
         <div className="container">
-          <Link to={"/products"} className="btn btn-dark btn-lg btn-rounded"><i className="fa-solid fa-left-long mr-4"></i> Productos</Link>
+          <Link to={"/products"} className="btn btn-dark btn-lg btn-rounded">
+            <i className="fa-solid fa-left-long mr-4"></i> Productos
+          </Link>
           <div className="row">
             <div className="col-md-7 col-sm-7 col-12">
               <div
