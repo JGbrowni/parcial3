@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 const CarritoPage = () => {
   const storedCart = JSON.parse(localStorage.getItem("cart"));
   const [cart, setCart] = useState(storedCart);
-  const ivaRate = 0.16;
+  const ivaRate = 0.13;
 
   const subtotal = cart.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -29,6 +29,7 @@ const CarritoPage = () => {
 
   return (
     <>
+      <span className="text-[25px] d-flex justify-content-center p-4">Tus compras:</span>
       <div className="carritofondo p-5">
         <div className="container">
           <div className="container-cart-products">
@@ -55,7 +56,7 @@ const CarritoPage = () => {
               ))}
             </div>
 
-            <div className="cart-total mt-4">
+            <div className="cart-total mt-1">
               <h3>Subtotal:</h3>
               <span className="totalImp text-[20px]">$ {subtotal}</span>
               <h3>IVA ({(ivaRate * 100).toFixed(0)}%):</h3>

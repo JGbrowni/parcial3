@@ -82,14 +82,14 @@ const ProductDetalle = () => {
                     <img
                       src={product.image}
                       className="d-block w-100"
-                      alt="Imagen 1"
+                      alt="imagen1"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
                       src={product.image2}
                       className="d-block w-100"
-                      alt="Imagen 2"
+                      alt="imagen2"
                     />
                   </div>
                 </div>
